@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,11 +39,8 @@
                         <a href="Menu.html">Menu</a>
                         </li>
                         <li>
-                        <a href="Calculadora basica.html">Calculadora Basica</a>
+                        <a href="Calculadora Basica.html">Calculadora Basica</a>
                         </li>
-                        <li>
-                        <a href="Pedido Realizado.html">Pedido Realizado</a>
-                        </li>    
                 </ul>
             </div>
         </nav>
@@ -54,11 +51,11 @@
                 <div class="image-container">
                     <img src="quiz1.jpg" alt="imagen" id="question-image" style="width:250px; height: auto;">
                 </div>
-                <h2 id="question">Question Text</h2>
+                <h2 id="question">Question text</h2>
                 <ul>
                     <li>
                         <input type="radio" name="answer" id="a" class="answer">
-                        <label for="a" id="a_text"></label>
+                        <label for="a" id="a_text">Question</label>
                     </li>
                     <li>
                         <input type="radio" name="answer" id="b" class="answer">
@@ -74,19 +71,8 @@
                     </li>
                 </ul>
             </div>
-                <button id="submit">NEXT</button>
+                <button id="submit">Next</button>
         </div>
-        <script>
-            const quizData =[
-                {
-                    question: "jdcbnbcibciu",
-                    image: "nckn",
-                    a: "jnvf",
-                    b: "djkcbcb",
-                    c: "djkcn",
-                    d: "sdnc",
-                }
-        </script>
     </div>
     <br>
     <br>
@@ -98,9 +84,9 @@
             margin: 0;
         }
         .quiz-container{
-            background-color: burlywood;
+            background-color: darkolivegreen;
             border-radius: 10px;
-            box-shadow: 0 7px 20px 5px darkolivegreen;
+            box-shadow: 0 7px 20px 5px black;
             width: 400px;
             overflow: hidden;
         }
@@ -118,7 +104,7 @@
             border-radius: 100px;
             border-style: solid;
             border-spacing: 12px;
-            border: 5px double gold;
+            border: 5px double; color: gold;
         }
         ul{
             list-style: none;
@@ -132,7 +118,7 @@
         }
         button{
             background-color: darkolivegreen;
-            color: black;
+            color: purple;
             border: none;
             display: block;
             width: 100%;
@@ -145,103 +131,205 @@
         }
         button:focus{
             outline:none;
-            background-color: orange;
+            background-color: burlywood;
         }
     </style>
     <script>
         const quizData=[
             {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
+                question:"¿Billie Eilish es hermosa?",
+                image:"https://i.pinimg.com/564x/a2/65/c1/a265c1a7e24ca8e8a3eb484ef54f8259.jpg",
+                a:"Si",
+                b:"No",
+                c:"Talvez",
+                d:"Mejor no contesto",
+                correct:"a",
+            },
+            {
+                question:"¿Cual es la fruta Favorita de Billie?",
+                image:"https://i.pinimg.com/736x/4c/34/f0/4c34f0e70d69de7ca67c61cc6457d0b1.jpg",
+                a:"Fresa",
+                b:"Aguacate",
+                c:"Piña",
+                d:"Yop",
+                correct:"b",
+            },
+            {
+                question:"¿Como se llama la Mama de Billie Eilish?",
+                image:"https://i.pinimg.com/736x/8d/d8/39/8dd83904377bbdcf9b38c43efe67db9f.jpg",
+                a:"Lupita",
+                b:"Shakira",
+                c:"Tu mama",
+                d:"Maggie Baird",
                 correct:"d",
             },
             {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
-                correct:"d", 
+                question:"¿De que Raza es el perro de Billie eilish?",
+                image:"https://i.pinimg.com/736x/5e/9e/03/5e9e0382a971ab3a4e1224769f34b425.jpg",
+                a:"Pitbull",
+                b:"chihuahua",
+                c:"Pubg",
+                d:"Raza alienigena",
+                correct:"a",
             },
             {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
+                question:"¿Quien es el ex de Billie Eilish?",
+                image:"https://i.pinimg.com/736x/d8/54/00/d85400b48d6cb17812a29e68d8bdbc1d.jpg",
+                a:"Homero Simpson",
+                b:"El vecino",
+                c:"Jesse Rutherford",
+                d:"Una roca UnU",
+                correct:"c",
+            },
+            {
+                question:"¿Color Favorito de Billie Eilish?",
+                image:"https://i.pinimg.com/736x/63/9d/9f/639d9f2cd072fe27bd7b59cb92ecc40a.jpg",
+                a:"Negro",
+                b:"Verde",
+                c:"Amarillo",
+                d:"Rojo",
+                correct:"C",
+                
+            },
+            {
+                question:"¿Cuantos albums tiene Billie Eilish?",
+                image:"https://i.pinimg.com/564x/3e/da/75/3eda75a768a9a821f15b7a07680b1ab9.jpg",
+                a:"8",
+                b:"10",
+                c:"2",
+                d:"3",
+                correct:"a",
+            },
+            {
+                question:"¿ Cuantos seguidores en total tiene Billie Eilish?",
+                image:"https://i.pinimg.com/564x/f4/f4/1c/f4f41ceab52398ce2e77d3be78defd1b.jpg",
+                a:"1M",
+                b:"108.1M",
+                c:"200M",
+                d:"13.5M",
+                correct:"b",
+            },
+            {
+                question:"¿ Cuantos premios en total tiene Billie Eilish?",
+                image:"https://i.pinimg.com/564x/e4/dc/92/e4dc92104e5d9c615da1e5593847e279.jpg",
+                a:"13",
+                b:"69",
+                c:"50",
+                d:"100",
+                correct:"b",
+            },
+            {
+                question:"¿ Quien inspiro  a Billie Eilish para iniciar en el mundo de la musica?",
+                image:"https://i.pinimg.com/736x/3a/a4/73/3aa473795b41bbcfa7bf384648f9f354.jpg",
+                a:"Su hermano",
+                b:"Una serie",
+                c:"Su mama",
+                d:"una hormiga",
+                correct:"b the wealking dead",
+            },
+            {
+                question:"¿Cual fue la primera cancion de Billie Eilish?",
+                image:"https://i.pinimg.com/564x/e7/e6/6d/e7e66d6b8d6d1e05e0721639f3a17619.jpg",
+                a:"NDA",
+                b:"Bored",
+                c:"Ocean Eyes",
+                d:"TV",
+                correct:"c",
+            },
+            {
+                question:"¿Quien es ella?",
+                image:"https://i.pinimg.com/564x/0f/ec/36/0fec36b0f054ce29236478a4d08a372e.jpg",
+                a:"Una princesa",
+                b:"Billie Eilish",
+                c:"Un angel",
+                d:"La hija de tu tatarabuela",
+                correct:"b",
+            },
+            {
+                question:"¿Cuantos años tiene Billie Eilish?",
+                image:"https://i.pinimg.com/736x/32/e7/5f/32e75f59584cc5a540acdd7130cc606a.jpg",
+                a:"300 años",
+                b:"50 años",
+                c:"21 años",
+                d:"25 años",
+                correct:"c",
+            },
+            {
+                question:"¿Como se llama Billie Eilish en la serie SWARM?",
+                image:"https://i.pinimg.com/564x/ff/dd/e7/ffdde7017c95bdc7c375a8060b62872d.jpg",
+                a:"Lisa",
+                b:"Anny",
+                c:"Laura",
+                d:"Eva",
                 correct:"d",
             },
             {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
+                question:"¿ Que cancion canto Billie Eilish para ganar el oscar?",
+                imaimage:"https://i.pinimg.com/564x/7f/c5/3c/7fc53c258a4874e3291ef5e6f917757e.jpg",
+                a:"No time to die",
+                b:"Dame tu cosita",
+                c:"Scooby doo papa",
+                d:"Happier than ever",
+                correct:"a",
+            },
+            {
+                question:"¿ Cuantos Dr.simis a recibido Billie Eilish?",
+                image:"https://i.pinimg.com/564x/f1/37/17/f13717ea0da648f05bc1380406a62132.jpg",
+                a:"12 ",
+                b:"8",
+                c:"15",
+                d:"0",
+                correct:"b",
+            },
+            {
+                question:"¿ Donde Nacio Billie Eilish?",
+                image:"https://i.pinimg.com/564x/e5/b1/22/e5b122e2064f86fde14f09e02316867d.jpg",
+                a:"En su casa",
+                b:"En una selva",
+                c:"En NY",
+                d:"Los angeles",
                 correct:"d",
             },
             {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
-                correct:"d",
+                question:"¿Cuando cumple años Billie Eilish?",
+                image:"https://i.pinimg.com/564x/f1/7f/58/f17f586dd4329c083c6070c940d2139d.jpg",
+                a:"18 de Diciembre",
+                b:"16 de Noviembre",
+                c:"5 de Abril",
+                d:"18 de Enero",
+                correct:"a",
             },
             {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
-                correct:"d",
+                question:"¿De que album pertenece la cancion -GOLDWING- de Billie Eilish?",
+                image:"https://i.pinimg.com/564x/2d/7e/b6/2d7eb6d935b075a044aca28e780804f4.jpg",
+                a:"Happier Than Ever",
+                b:"Dont Smile at Me",
+                c:" When We All Fall Asleep, Where Do We Go?",
+                d:"Lovening",
+                correct:"a",
             },
             {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
-                correct:"d",
+                question:"¿De que album pertenece la cancion -BAD GUY- de Billie Eilish?",
+                image:"https://i.pinimg.com/736x/15/df/98/15df98f473d208ff010bbe3662d6e87e.jpg",
+                a:"Lovening",
+                b:" When We All Fall Asleep, Where Do We Go?",
+                c:"Dont Smile at Me",
+                d:"Happier Than Ever",
+                correct:"b",
             },
             {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
-                correct:"d",
-            },
-            {question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
-                correct:"d",
-            },
-            {
-                question:"¿?",
-                image:"quiz1.jpg",
-                a:"",
-                b:"",
-                c:"",
-                d:"",
-                correct:"d",
+                question:"¿Quien es el cantante favorito de Carlos AH?",
+                image:"https://i.pinimg.com/564x/af/fd/5b/affd5bc801f91a9e123e022845706f6d.jpg",
+                a:"Tu vecina",
+                b:"Una joven",
+                c:"La futura esposa de carlos",
+                d:"Una cantante",
+                correct:"c",
             },
            
         ];
-        const quiz=document.getElementById('quiz');
+
+        const quiz=document.getElementById('https');
         const answerEls=document.querySelectorAll('.answer');
         const questionEl=document.getElementById('question');
         const submitBtn=document.getElementById('submit');
@@ -345,7 +433,7 @@
     }
     .contact-links a{
         display: inline-block;
-        color: darkolivegreen;
+        color: blue;
         font-size: 24px;
         margin: 0 10px;
         transition: all 0.3s ease;
@@ -362,9 +450,9 @@
                 <div class="fotter-section about">
    
    
-        <h2>Contactame</h2>
+        <h2>CONTACTAME</h2>
         <p>Si estas interesado en contactarme,puedes hacerlo a atraves de cualquiera de las siguientes 
-                redes Sociales:</p>
+            redes Sociales:</p>
             <div class="contact-links">
             <a href="http://www.facebook.com/miperfil"
             target="_blank"><i class="fab fa-facebook"></i></a>
@@ -460,8 +548,14 @@
         font-weight: bold;
         margin-bottom: 10px;
     }
+    .green{
+        color:lightgreen;
+             }
     .orange{
-        color:black;
+        color:yellow;
+             }
+    .red{
+        color:darkred;
              }
    
    
@@ -485,3 +579,5 @@
    
 </body>
 </html>
+
+	
